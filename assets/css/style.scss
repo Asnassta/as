@@ -507,6 +507,28 @@ body.hidden {
 			padding-bottom: 55px;
 		}
 	}
+	&-calendar {
+		.popup__inner {
+			max-width: 475px;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.popup__box {
+			border-radius: 10px;
+			min-height: 435px;
+		}
+	}
+	&-meeting {
+		.popup__inner {
+			max-width: 475px;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.popup__box {
+			border-radius: 10px;
+			min-height: 435px;
+		}
+	}
 }
 
 .tabs-nav {
@@ -885,6 +907,19 @@ body.hidden {
 			max-height: calc(100vh - 50px);
 			height: calc(100vh - 50px);
 			border-radius: 30px 30px 0 0;
+		}
+		&-calendar, &-meeting {
+			.popup__inner {
+				top: auto;
+				bottom: 0;
+				transform: translate(-50%, 0);
+				max-width: 100%;
+			}
+			.popup__box {
+				min-height: 60vh;
+				height: auto;
+				border-radius: 10px 10px 0 0;
+			}
 		}
 	}
 

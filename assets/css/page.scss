@@ -413,7 +413,7 @@
 		margin-right: 20px;
 		.page-nav__link {
 			&.active {
-				border-bottom: 1px solid $blue;
+				//border-bottom: 1px solid $blue;
 			}
 		}
 	}
@@ -746,17 +746,19 @@
 			&_prev {
 				span {
 					display: none;
-					svg {
-						margin-right: 0;
-					}
+				}
+				svg {
+					margin-right: 0;
+					margin-left: 0;
 				}
 			}
 			&_next {
 				span {
 					display: none;
-					svg {
-						margin-left: 0;
-					}
+				}
+				svg {
+					margin-left: 0;
+					margin-right: 0;
 				}
 			}
 		}
@@ -765,13 +767,8 @@
 
 @media(max-width: 546px) {
 	.page-nav {
-		&__pagin {
-			.page-nav__link {
-				&:nth-child(3), &:nth-child(4),
-				&:nth-child(6), &:nth-child(7) {
-					display: none;
-				}
-			}
+		&__link {
+			margin-right: 10px;
 		}
 	}
 }
