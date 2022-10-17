@@ -516,6 +516,7 @@ body.hidden {
 		.popup__box {
 			border-radius: 10px;
 			min-height: 435px;
+			overflow: auto;
 		}
 	}
 	&-meeting {
@@ -527,6 +528,7 @@ body.hidden {
 		.popup__box {
 			border-radius: 10px;
 			min-height: 435px;
+			overflow: auto;
 		}
 	}
 }

@@ -1247,9 +1247,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding: 10px 0;
     border-bottom: 1px solid #919FBA; }
     .calendar-info__row > * {
@@ -1260,6 +1260,12 @@
         width: 62%; }
     .calendar-info__row:last-child {
       border-bottom: none; }
+  .calendar-info__header .calendar-info__description {
+    font-size: 16px;
+    font-weight: 700; }
+  .calendar-info__header .calendar-info__data {
+    color: #2F6FC1;
+    font-weight: 600; }
   .calendar-info__description {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
@@ -2212,7 +2218,7 @@
   .info-page .slick-dots {
     margin-top: 10px; }
   .calendar-info {
-    padding: 34px 15px 100px; } }
+    padding: 34px 15px 130px; } }
 
 /*=============/adaptive==========*/
 /*Reset
@@ -2739,7 +2745,8 @@ body.hidden {
     transform: translate(-50%, -50%); }
   .popup-calendar .popup__box {
     border-radius: 10px;
-    min-height: 435px; }
+    min-height: 435px;
+    overflow: auto; }
   .popup-meeting .popup__inner {
     max-width: 475px;
     top: 50%;
@@ -2748,7 +2755,8 @@ body.hidden {
     transform: translate(-50%, -50%); }
   .popup-meeting .popup__box {
     border-radius: 10px;
-    min-height: 435px; }
+    min-height: 435px;
+    overflow: auto; }
 
 .tabs-nav {
   margin-top: 15px;

@@ -485,7 +485,7 @@
 	}
 	&__row {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		padding: 10px 0;
 		border-bottom: 1px solid $gray;
 		>* {
@@ -498,6 +498,16 @@
 		}
 		&:last-child {
 			border-bottom: none;
+		}
+	}
+	&__header {
+		.calendar-info__description {
+			font-size: 16px;
+			font-weight: 700;
+		}
+		.calendar-info__data {
+			color: $blue;
+			font-weight: 600;
 		}
 	}
 	&__description {
@@ -1575,7 +1585,7 @@
 	}
 
 	.calendar-info {
-		padding: 34px 15px 100px;
+		padding: 34px 15px 130px;
 	}
 }
 /*=============/adaptive==========*/
