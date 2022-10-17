@@ -3090,7 +3090,7 @@ body.hidden {
     transform: translate(-50%, 0);
     max-width: 100%; }
   .popup-calendar .popup__box, .popup-meeting .popup__box {
-    min-height: 60vh;
+    min-height: 80vh;
     height: auto;
     border-radius: 10px 10px 0 0; }
   .search-block {
